@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="carousel-main" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators hidden-xs">
+            
+              <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-main" data-slide-to="1" ></li>
+              <li data-target="#carousel-main" data-slide-to="2" ></li>
+            
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active"><%= raw @page.content_for(:slide1) %></div>
+            <div class="item"><%= raw @page.content_for(:slide2) %></div>
+            <div class="item"><%= raw @page.content_for(:slide3) %></div>
+         
+          </div>
+
+          <!-- Controls -->
+<!--           <a class="left carousel-control" href="#carousel-main" data-slide="prev">
+            <span class="fa fa-chevron-left" style="position:absolute;top:47%;"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-main" data-slide="next">
+            <span class="fa fa-chevron-right" style="position:absolute;top:47%;"></span>
+          </a> -->
+        </div>
+
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Sales</h2>
+      <p>You have a great product, supply chain and network but you need to reach more customers. In this internet-driven world connections are assumed but not deep. Extend your reach and deepen your connections with A-iGroup Sales services, customized to your product and audience.</p>
+
+    </div>
+    <div class="col-md-4">
+      <h2>Marketing</h2>
+      <p>You're not competing against local businesses anymore. Your competitors are companies like Amazon, Google and Facebook. They may not be competing directly with you but they are taking away your customer's time and attention. No, we can't win against Amazon but we can get you in the fight. We provide simple, maintainable marketing solutions that will keep you in front of your customers.</p>
+
+    </div>
+    <div class="col-md-4">
+      <h2>Business Coaching</h2>
+      <p>Sometimes you can get so focused on your business or product you can't see the forest for the trees. We take an outsider's approach to your business and the customer experience. We find things you don't want to see but also things that are working and can be optimized. Small changes can make a big, positive impact on your business.</p>
+
+    </div>
+
+  </div>
+    <div class="row">
+    <div class="col-md-4 text-center">
+      <button class="btn btn-success">Learn more.</button>
+
+    </div>
+    <div class="col-md-4 text-center">
+      <button class="btn btn-success">Learn more.</button>
+
+    </div>
+    <div class="col-md-4 text-center">
+      <button class="btn btn-success">Learn more.</button>
+
+    </div>
+
+  </div>
+</div>
+
+
+<%#= render '/refinery/content_page' %>
+
