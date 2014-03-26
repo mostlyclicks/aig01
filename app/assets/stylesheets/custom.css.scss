@@ -4,13 +4,42 @@ body {
   background-color:$main-blue;
 }
 
+h1, h2, h3 {
+  font-family: $raleway;
+}
+
+
 
 .carousel-inner {
   min-height:450px;
   h1 {
-    color:lighten($main-blue, 20%);
-    font-size:84px;
-    padding-top:1em;
-
+  color:lighten($main-blue, 20%);
+  font-size:84px;
+  padding-top:1em;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgba(255,255,255, .7);
   }
 }
+
+#bucket-section {
+  background-color:darken($main-blue,2%);
+  color:rgba(255,255,255, .7);
+  padding:20px 0 40px 0;
+  div.col-md-4 {
+    position:relative;
+    min-height:300px;
+    button {
+      position:absolute;
+      bottom:10px;
+      left:auto;
+    }
+  }
+}
+
+footer {
+  background-color:darken($main-blue,20%);
+  height:10vh;
+  padding:20px 0 10px 0;
+  margin-top:0px;
+}
+
