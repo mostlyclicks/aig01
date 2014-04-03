@@ -1,1 +1,27 @@
-<%= render '/refinery/content_page' %>
+<% bg_image = @page.images.sample.url %>
+<style>
+#page-background {
+  background-image:url(<%= bg_image %>) !important;
+  background-size: cover;
+  background-position-y:60%;
+
+}
+
+
+</style>
+
+
+<div id="page-background">
+<div class="container" style="min-height:70vh;padding:40px 0;">
+  <div class="row">
+
+    <div class="col-md-5 copy"  style="">
+      <%#= render '/refinery/content_page' %>
+      <h1><%= @page.title %></h1>
+      <%= raw @page.content_for(:body) %>
+
+    </div>
+
+  </div>
+</div>
+</div>

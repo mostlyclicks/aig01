@@ -11,7 +11,25 @@
     <div id="page_container">
       <header id="header">
         <%#= render "/refinery/header" -%>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-md-offset-1">
+              <%= link_to (image_tag 'logo.png', class: 'img-responsive'), '/' %>
+            </div>
+            <div class="col-md-7">
+              <ul class="nav nav-pills pull-right" style="margin-top:25px;">
+                
+                <li><a href="/sales">Sales</a></li>
+                <li><a href="/marketing">Marketing</a></li>
+                <li><a href="/business-coaching">Business Coaching</a></li>
+              </ul>
+            </div>
 
+
+          </div>
+
+
+        </div>
       </header>
       <section id="page">
         

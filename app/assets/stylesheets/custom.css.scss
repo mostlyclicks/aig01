@@ -2,10 +2,26 @@
 /* custom styles */
 body {
   background-color:$main-blue;
+
+ 
 }
 
 h1, h2, h3 {
   font-family: $raleway;
+}
+
+#header {
+  img {margin:20px 0;}
+  background-color:rgba(0,0,0,.2);
+}
+
+
+.copy {
+  background-color:rgba(0,0,0,.8);
+  font-family:$raleway;
+  color:#ffffff;
+  padding:0 40px 40px 40px;
+
 }
 
 
@@ -38,8 +54,9 @@ h1, h2, h3 {
 
 footer {
   background-color:darken($main-blue,20%);
-  height:10vh;
+  height:20vh;
   padding:20px 0 10px 0;
   margin-top:0px;
+  color:rgba(255,255,255,.8);
 }
 
